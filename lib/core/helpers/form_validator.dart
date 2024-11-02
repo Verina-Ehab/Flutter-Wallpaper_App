@@ -16,7 +16,7 @@ String? validatePhone(String? value) {
     return "Mobile phone number is required";
   } else if (!regExp.hasMatch(value ?? '')) {
     return "Mobile phone number must contain only digits";
-  } else if (!value!.startsWith('+1') || value.length != 12) {
+  } else if (!value!.startsWith('1') || value.length != 12) {
     // this if to check USA numbers
     return 'Please enter a valid USA phone number (e.g., +15551234567)';
   }
